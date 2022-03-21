@@ -12,3 +12,6 @@ if (isset($_POST['Submit'])) {
 } else {
     echo "Tidak ada data yang dikirim";
 }
+?>
+
+<a href="login.php">Click disini untuk Login</a>
