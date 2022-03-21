@@ -1,11 +1,13 @@
 <?php
 
+session_start();
+
 if (isset($_POST['Submit'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $_SESSION['username'] = $username;
-    $_SESSION['password'] = $password;
+    $_SESSION['usernameRegister'] = $username;
+    $_SESSION['passwordRegister'] = $password;
 
     echo "Username: $username <br>";
     echo "Password: $password <br>";

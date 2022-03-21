@@ -2,6 +2,15 @@
 
 echo "<h1>Hello World!</h1>";
 
+// ? Go to
+echo "<a href='" . "login.php" . "'>" . "Go to Login" . "</a>";
+echo "<br>";
+echo "<a href='" . "register.php" . "'>" . "Go to Register" . "</a>";
+echo "<br>";
+echo "<a href='" . "upload.php" . "'>" . "Go to Upload" . "</a>";
+echo "<br>";
+
+
 //* Tipe Data
 echo "<h2>Tipe Data</h2>";
 $text = "Text";

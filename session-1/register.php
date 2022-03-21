@@ -9,8 +9,9 @@
 </head>
 
 <body>
+    <h5>Register</h5>
 
-    <form action="prosesRegister.php" method="POST">
+    <form action="registerProcess.php" method="POST">
         <table>
             <caption>Register</caption>
             <tr>

@@ -10,7 +10,8 @@
 
 <body>
     <h1>Met Datang</h1>
-    <form action="prosesLogin.php" method="POST">
+
+    <form action="loginProcess.php" method="POST">
         <table>
             <caption>Login</caption>
             <tr>
@@ -25,8 +26,7 @@
                 <td><input type="submit" name="Submit"></td>
             </tr>
     </form>
-
-    <a href="logout.php"></a>
 </body>
 
 </html>
+<a href="logout.php">Logout</a>
