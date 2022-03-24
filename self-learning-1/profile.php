@@ -47,7 +47,7 @@
                 <td><b>" . $_SESSION['tempatLahir'] . "</b></td>
 
                 <td>Tanggal Lahir</td>
-                <td><b>" . $_SESSION['tanggalLahir'] . "</b></td>
+                <td><b>" . date_format(date_create($_SESSION['tanggalLahir']), 'd-m-Y') . "</b></td>
 
                 <td>NIK</td>
                 <td><b>" . $_SESSION['nik'] . "</b></td>
