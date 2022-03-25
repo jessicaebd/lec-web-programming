@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        <?php include "css/style.css" ?>
+    </style>
 
     <title>Self Learning 1</title>
 </head>
@@ -14,8 +16,10 @@
 <body>
     <div class="navbar">
         <span>Aplikasi Pengelolaan Keuangan</span>
-        <a href="home.php">Home</a>
-        <a href="profile.php">Profile</a>
+        <div class="navbar-mid">
+            <a href="home.php" class="active">Home</a>
+            <a href="profile.php">Profile</a>
+        </div>
         <a href="logout.php">Logout</a>
     </div>
 

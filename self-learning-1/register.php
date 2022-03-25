@@ -6,14 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        <?php include "css/style.css" ?>
+    </style>
 
     <title>Self Learning 1</title>
 </head>
 
 <body>
-    <div class="register-page">
-        <h3>Register</h3>
+    <div class="container register-page">
+        <div class="header">
+            <h3>Register</h3>
+        </div>
 
         <form action="registerProcess.php" method="post" enctype="multipart/form-data">
             <table>
@@ -50,7 +54,7 @@
                 </tr>
                 <tr>
                     <td>Alamat</td>
-                    <td><input type="text" name="alamat"></td>
+                    <td><textarea type="text" name="alamat" rows="4"></textarea></td>
 
                     <td>Kode Pos</td>
                     <td><input type="text" name="kodePos"></td>
@@ -69,8 +73,14 @@
                     <td><input type="password" name="password2"></td>
                 </tr>
                 <tr>
-                    <td><button><a href="welcome.php">Kembali</a></button></td>
-                    <td><input type="submit" name="Register" value="Register"></td>
+                    <td></td>
+                    <td></td>
+
+                    <td></td>
+                    <td></td>
+
+                    <td class="kembali"><button><a href="welcome.php">Kembali</a></button></td>
+                    <td class="register"><input type="submit" name="Register" value="Register"></td>
                 </tr>
             </table>
         </form>

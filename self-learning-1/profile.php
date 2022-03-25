@@ -6,11 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
     <style>
-        td {
-            padding: 1em;
-        }
+        <?php include "css/style.css" ?>
     </style>
 
     <title>Self Learning 1</title>
@@ -19,13 +16,17 @@
 <body>
     <div class="navbar">
         <span>Aplikasi Pengelolaan Keuangan</span>
-        <a href="home.php">Home</a>
-        <a href="profile.php">Profile</a>
+        <div class="navbar-mid">
+            <a href="home.php">Home</a>
+            <a href="profile.php" class="active">Profile</a>
+        </div>
         <a href="logout.php">Logout</a>
     </div>
 
-    <div class="profile-page">
-        <h3>Profil Pribadi</h3>
+    <div class="container profile-page">
+        <div class="header">
+            <h3>Profil Pribadi</h3>
+        </div>
 
         <?php
         session_start();

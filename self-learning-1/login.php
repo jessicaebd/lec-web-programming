@@ -6,29 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        <?php include "css/style.css" ?>
+    </style>
 
     <title>Self Learning 1</title>
 </head>
 
 <body>
-    <div class="login-page">
-        <h3>Login</h3>
+    <div class="container login-page">
+        <div class="header">
+            <h3>Login</h3>
+        </div>
 
-        <form action="loginProcess.php" method="post">
-            <table>
-                <tr>
-                    <td>Username</td>
-                    <td><input type="text" name="usernameLogin"></td>
-                </tr>
-                <tr>
-                    <td>Password</td>
-                    <td><input type="password" name="passwordLogin"></td>
-                </tr>
-            </table>
-
-            <input type="submit" name="login" value="Login">
-        </form>
+        <div class="login-form">
+            <form action="loginProcess.php" method="post">
+                <table>
+                    <tr>
+                        <td>Username</td>
+                        <td><input type="text" name="usernameLogin"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="passwordLogin"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="btn-login-page">
+                            <div class="login-btn">
+                                <input type="submit" name="login" value="Login">
+                            </div>
+                            <div class="kembali-btn-login">
+                                <button><a href="welcome.php">Kembali</a></button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </div>
 </body>
 
