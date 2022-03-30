@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+td {
+    vertical-align: top;
+    padding: 0.8em 1.5em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+/* Welcome */
+.welcome-page {
+    background-color: #e5edeb;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 35rem;
+}
+
+.top {
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+}
+
+.welcome-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.welcome-login-btn > a,
+.welcome-register-btn > a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+}
+
+.welcome-login-btn > a {
+    background-color: #99d6ed;
+}
+
+.welcome-register-btn > a {
+    background-color: #c6ed99;
+}
+
+/* Register */
+.register-page {
+    background-color: #c2f0f7;
+}
+
+.header {
+    padding: 2rem;
+    font-size: 20px;
+}
+
+.kembali > button,
+.register > input {
+    width: 120px;
+    padding: 2px 20px;
+    border-radius: 5px;
+    border: 0.5px solid #000;
+}
+
+.kembali > button {
+    background-color: #fdd7ac;
+}
+
+.register > input {
+    background-color: #adf59f;
+}
+
+/* Login */
+.login-page {
+    background-color: #fbfdac;
+}
+
+.login-form {
+    background-color: #ace6fd;
+    padding: 1.5em 4em;
+}
+
+.btn-login-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-btn > input,
+.kembali-btn-login > button {
+    width: 75px;
+    padding: 5px;
+    border: none;
+}
+
+.login-btn > input {
+    background-color: #adf59f;
+}
+
+.kembali-btn-login > button {
+    background-color: #fdd7ac;
+}
+
+/* Home */
+.navbar {
+    background-color: #f9ffca;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.navbar-mid > a {
+    margin: 0 1rem;
+}
+
+.home-page {
+    background-color: #cad1ff;
+    height: 100vh;
+    text-align: center;
+    padding: 8rem;
+}
+
+/* Profile */
+.profile-page {
+    background-color: #cad1ff;
+}
+
+/* Login Error */
+.login-error {
+    background-color: #fdd7ac;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.register-error {
+    background-color: #fdd7ac;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 1rem;
+}
