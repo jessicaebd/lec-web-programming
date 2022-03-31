@@ -10,7 +10,7 @@
         <?php include "css/style.css" ?>
     </style>
 
-    <title>Self Learning 1</title>
+    <title>Aplikasi Pengelolaan Keuangan</title>
 </head>
 
 <body>
@@ -83,11 +83,13 @@
                 <td><img src='uploads/" . $fetch['foto_profil'] . "' width='120'></td>
             </tr>
         </table>
-        <div class='kembali'><button><a href='editProfile.php?id=" . $fetch['id'] . "'>Edit</a></button><br></div>
+        <div class='edit-btn'><button><a class = 'edit-a' href='editProfile.php?id=" . $fetch['id'] . "'>Edit</a></button><br></div>
             ";
         } else {
-            echo "Silahkan login terlebih dahulu <br>";
-            echo "<a href='index.php'><b><u>Kembali</u></b></a>";
+            echo '<script type="text/javascript">';
+            echo 'alert("Silahkan login terlebih dahulu!");';
+            echo 'window.location.href = "login.php";';
+            echo '</script>';
         }
         ?>
     </div>

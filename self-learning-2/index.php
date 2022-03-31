@@ -10,7 +10,7 @@
         <?php include "css/style.css" ?>
     </style>
 
-    <title>Self Learning 1</title>
+    <title>Aplikasi Pengelolaan Keuangan</title>
 </head>
 
 <body>
@@ -25,11 +25,11 @@
 
         <div class="welcome-btn">
             <div class="welcome-login-btn">
-                <a href="login.php">Login</a>
+                <a href="login.php"><b>Login</b></a>
             </div>
 
             <div class="welcome-register-btn">
-                <a href="register.php">Register</a>
+                <a href="register.php"><b>Register</b></a>
             </div>
         </div>
     </div>

@@ -10,7 +10,7 @@
         <?php include "css/style.css" ?>
     </style>
 
-    <title>Document</title>
+    <title>Aplikasi Pengelolaan Keuangan</title>
 </head>
 
 <body>
@@ -23,7 +23,6 @@
         include "config.php";
         session_start();
 
-        // check password
         if (isset($_POST['login'])) {
             $username = $_POST['usernameLogin'];
             $password = $_POST['passwordLogin'];
@@ -37,18 +36,19 @@
                     $_SESSION['username'] = $username;
                     header("Location: home.php");
                 } else {
-                    echo "Password salah";
+                    echo '<script type="text/javascript">';
+                    echo 'alert("Password Salah!");';
+                    echo 'window.location.href = "login.php";';
+                    echo '</script>';
                 }
             } else {
-                echo "Username tidak ditemukan!";
+                echo '<script type="text/javascript">';
+                echo 'alert("Username tidak ditemukan!");';
+                echo 'window.location.href = "login.php";';
+                echo '</script>';
             }
         }
         ?>
-    </div>
-    }
-
-    }
-    ?>
     </div>
 </body>
 

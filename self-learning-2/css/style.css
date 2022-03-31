@@ -169,3 +169,15 @@ td {
     text-align: center;
     padding: 1rem;
 }
+
+.edit-btn > button {
+    background-color: rgb(245, 129, 129);
+    width: 120px;
+    height: 20px;
+    border-radius: 5px;
+    border: 0.5px solid #000;
+}
+
+.edit-a {
+    padding: 1rem 2rem;
+}

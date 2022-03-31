@@ -1,16 +1,13 @@
 <?php
 include "config.php";
-session_start();
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $_SESSION['id'] = $id;
 
     $str_query = "SELECT * FROM mahasiswa WHERE id = $id";
     $result = mysqli_query($connection, $str_query);
     $fetch = mysqli_fetch_array($result);
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +22,7 @@ if (isset($_GET['id'])) {
         <?php include "css/style.css" ?>
     </style>
 
-    <title>Self Learning 1</title>
+    <title>Aplikasi Pengelolaan Keuangan</title>
 </head>
 
 <body>
@@ -75,11 +72,15 @@ if (isset($_GET['id'])) {
                     <td><input type="text" name="kodePos" value="<?php echo $fetch['kode_pos']; ?>"></td>
 
                     <td>Foto Profil</td>
-                    <td><input type="file" name="fotoProfil" value="<?php echo $fetch['foto_profil']; ?>"></td>
+                    <td>
+                        <input type="file" name="fotoProfil">
+                        <br>
+                        <img src="uploads/<?php echo $fetch['foto_profil']; ?>" alt="" width="100">
+                    </td>
                 </tr>
                 <tr>
                     <td>Username</td>
-                    <td><input type="text" name="username" value="<?php echo $fetch['username']; ?>" readonly></td>
+                    <td><input type=" text" name="username" value="<?php echo $fetch['username']; ?>" readonly></td>
 
                     <td>Password 1</td>
                     <td><input type="password" name="password1" value="<?php echo $fetch['password']; ?>"></td>
@@ -88,13 +89,16 @@ if (isset($_GET['id'])) {
                     <td><input type="password" name="password2" value="<?php echo $fetch['password']; ?>"></td>
                 </tr>
                 <tr>
+                    <input type="hidden" name="id" value="<?php echo $fetch['id']; ?>">
+                </tr>
+                <tr>
                     <td></td>
                     <td></td>
 
                     <td></td>
                     <td></td>
 
-                    <td class="kembali"><button><a href="index.php">Kembali</a></button></td>
+                    <td class="kembali"><button><a href="profile.php">Kembali</a></button></td>
                     <td class="register"><input type="submit" name="edit" value="Save"></td>
                 </tr>
             </table>

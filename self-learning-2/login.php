@@ -10,7 +10,7 @@
         <?php include "css/style.css" ?>
     </style>
 
-    <title>Self Learning 1</title>
+    <title>Aplikasi Pengelolaan Keuangan</title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
                                 <input type="submit" name="login" value="Login">
                             </div>
                             <div class="kembali-btn-login">
-                                <button><a href="welcome.php">Kembali</a></button>
+                                <button><a href="index.php">Kembali</a></button>
                             </div>
                         </td>
                     </tr>

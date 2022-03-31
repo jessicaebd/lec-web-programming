@@ -10,7 +10,7 @@
         <?php include "css/style.css" ?>
     </style>
 
-    <title>Self Learning 1</title>
+    <title>Aplikasi Pengelolaan Keuangan</title>
 </head>
 
 <body>
@@ -26,7 +26,6 @@
     <div class="home-page">
         <?php
         include "config.php";
-
         session_start();
 
         if (isset($_SESSION['username'])) {
@@ -38,8 +37,10 @@
 
             echo "Halo, <b>" . $fetch['nama_depan'] . " " . $fetch['nama_tengah'] . " " . $fetch['nama_belakang'] . "</b>, Selamat Datang di Aplikasi Pengelolaan Keuangan";
         } else {
-            echo "Silahkan login terlebih dahulu <br>";
-            echo "<a href='index.php'><b><u>Kembali</u></b></a>";
+            echo '<script type="text/javascript">';
+            echo 'alert("Silahkan login terlebih dahulu!");';
+            echo 'window.location.href = "login.php";';
+            echo '</script>';
         }
         ?>
     </div>
