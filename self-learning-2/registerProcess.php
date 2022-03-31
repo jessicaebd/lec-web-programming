@@ -167,7 +167,7 @@
             // Rename file name before saving to dir
             $temp = explode(".", $fileName);
             $fileName = round(microtime(true)) . "_" . $username . '.' . end($temp);
-            $uploaded = move_uploaded_file($fileTmpName, $dirUpload . $fileName, $fileName);
+            $uploaded = move_uploaded_file($fileTmpName, $dirUpload . $fileName);
 
 
             // Insert data

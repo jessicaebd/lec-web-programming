@@ -28,7 +28,7 @@ if (isset($_GET['id'])) {
 <body>
     <div class="container register-page">
         <div class="header">
-            <h3>Register</h3>
+            <h3>Edit Profile</h3>
         </div>
 
         <form action="editProfileProcess.php" method="post" enctype="multipart/form-data">
